@@ -16,12 +16,8 @@ function playStream(idVideoTag, stream){
 }
 
 openStream().then(stream => playStream('localStream', stream));
-
 const peer = new Peer({ 
-    key: 'peerjs',
-    host: 'https://anp2pjs.herokuapp.com/',
-    secure: true,
-    port: 443
+    key: 'peerjs'
 });
 
 peer.on('open', id => {
