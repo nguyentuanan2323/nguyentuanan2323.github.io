@@ -19,7 +19,7 @@ openStream().then(stream => playStream('localStream', stream));
 
 const peer = new Peer({ 
     key: 'peerjs',
-    host: 'anp2pjs.herokuapp.com',
+    host: 'https://anp2pjs.herokuapp.com/',
     secure: true,
     port: 443
 });
